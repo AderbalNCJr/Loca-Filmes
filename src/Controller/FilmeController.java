@@ -47,10 +47,10 @@ public class FilmeController implements Controller{
         
         if (Database.getInstancia().FeditData(filme)){
             System.out.print("ENtrou");
-            /*int index = Database.getInstancia().getFilmes().indexOf(filme);
+            int index = Database.getInstancia().getFilmes().indexOf(filme);
             filme.setNome(newTitulo);
             filme.setFaixaEtaria(newFaixaEtaria);
-            Database.getInstancia().getFilmes().set(index, filme);*/
+            Database.getInstancia().getFilmes().set(index, filme);
             return true;
         }
         return false;
