@@ -48,7 +48,7 @@ public class Filme implements Model, Comparable<Filme>{
     }
     
     public boolean equals(Object o){
-        if (o instanceof Cliente){
+        if (o instanceof Filme){
             return nome.equalsIgnoreCase(((Filme) o).getNome());
         }
         return false;
